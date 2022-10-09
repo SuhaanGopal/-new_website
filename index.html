@@ -8,20 +8,151 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Avenger movie gallery</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Avenger</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#latestmovies">Latest Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#collections">Collections</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Other Stuff
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Comics</a></li>
+                  <li><a class="dropdown-item" href="#">Magazines</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a class="nav-link" href="#form" style="color:black;">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+      <!-- carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/236x/6f/ba/27/6fba27ce123c47ac92a016b663ae9d10.jpg" class="d-block w-100" height="1000px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/b/close-up-captain-america-civil-war-superheros-figure-action-bangkok-thailand-may-shot-fighting-appearing-american-comic-149316851.jpg" class="d-block w-100" height="1000px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/236x/d7/58/2f/d7582f66248052162f1b79c99d97e7b6.jpg" class="d-block w-100" height="1000px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/236x/c8/b9/d0/c8b9d05bc9ffbad02a86c17343990830.jpg" class="d-block w-100" height="1000px" widht="1280px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Accordian -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Iron Man
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Iron Man is a superhero appearing in American comic books published by Marvel Comics. The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover dated March 1963), and received his own title in Iron Man #1 (May 1968). Also in 1963, the character founded the Avengers alongside Thor, Ant-Man, Wasp and the Hulk.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Captain America
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by cartoonists Joe Simon and Jack Kirby, the character first appeared in Captain America Comics #1 (cover dated March 1941) from Timely Comics, a predecessor of Marvel Comics. Captain America was designed as a patriotic supersoldier who often fought the Axis powers of World War II and was Timely Comics' most popular character during the wartime period. The popularity of superheroes waned following the war, and the Captain America comic book was discontinued in 1950, with a short-lived revival in 1953. Since Marvel Comics revived the character in 1964, Captain America has remained in publication
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Spiderman
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Spider-Man is a superhero appearing in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist Steve Ditko, he first appeared in the anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age of Comic Books. He has since been featured in films, television shows, video games, and plays. Spider-Man is the alias of Peter Parker, an orphan raised by his Aunt May and Uncle Ben in New York City after his parents Richard and Mary Parker died in a plane crash. Lee and Ditko had the character deal with the struggles of adolescence and financial issues and gave him many supporting characters, such as Flash Thompson, J. Jonah Jameson, and Harry Osborn; romantic interests Gwen Stacy, Mary Jane Watson, and the Black Cat; and foes such as Doctor Octopus, the Green Goblin, and Venom. In his origin story, he gets spider-related abilities from a bite from a radioactive spider; these include clinging to surfaces, superhuman strength and agility, and detecting danger with his "spider-sense." He also builds wrist-mounted "web-shooter" devices that shoot artificial spider webs of his own design.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Thor
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Thor is a 2011 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures,[N 1] it is the fourth film in the Marvel Cinematic Universe (MCU). It was directed by Kenneth Branagh, written by the writing team of Ashley Edward Miller and Zack Stentz along with Don Payne, and stars Chris Hemsworth as the title character alongside Natalie Portman, Tom Hiddleston, Stellan Skarsgård, Colm Feore, Ray Stevenson, Idris Elba, Kat Dennings, Rene Russo, and Anthony Hopkins. After reigniting a dormant war, Thor is banished from Asgard to Earth, stripped of his powers and his hammer Mjölnir. As his brother Loki (Hiddleston) plots to take the Asgardian throne, Thor must prove himself worth
+            </div>
+          </div>
+        </div>
+        <!-- List Group -->
+        <h1>List Of All Avengers Movies</h1>
+        <ul class="list-group">
+          <li class="list-group-item" id="collections">The Avengers</li>
+          <li class="list-group-item">Avengers: Age of Ultron</li>
+          <li class="list-group-item">Avengers: Infinity War</li>
+          <li class="list-group-item">Avengers: Endgame</li>
+          <p></p>
+          <li class="list-group-item" id="latestmovies">Avengers: Infinity War</li>
+          <div class="card" style="width: 18rem;">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Avengers come together and try to stop Thanos once and for all.</p>
+              <a href="https://www.imdb.com/title/tt4154756/" class="btn btn-primary">Look inside</a>
+            </div>
+          </div>
+          <li class="list-group-item" id="latestmovies">Avengers: Endgame</li>
+          <div class="card" style="width: 18rem;">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The last time the Avengers come together to defeat Thanos for good.</p>
+              <a href="https://www.imdb.com/title/tt4154796/?ref_=fn_al_tt_1" class="btn btn-primary">Look inside</a>
+            </div>
+          </div>
+        </ul>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Enter your email" aria-label="search" id="form">
+        <button class="btn btn-outline-success" type="submit">Sign Up</button>
+    </form>
+</body>
+</html
